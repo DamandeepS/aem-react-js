@@ -3,7 +3,7 @@ import {JavaApi} from './JavaApi';
 import {ReactParsysProps} from './ReactParsys';
 import {ResourceComponent, ResourceProps} from './ResourceComponent';
 
-export type Transform<R> = (api: JavaApi) => R;
+export type Transform<R> = (props: any, api: JavaApi) => R;
 
 export type parsysFactory<P> = (api: JavaApi, props: P) => JSX.Element[];
 
