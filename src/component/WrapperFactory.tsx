@@ -96,7 +96,7 @@ export class Wrapper<E extends object, R> extends ResourceComponent<
       this.getSelectors()
     );
     const newProps = this.config.transform
-      ? this.config.transform(javaApi)
+      ? this.config.transform(props,javaApi)
       : props;
     this.getContainer().cache.putTransform(
       this.getPath(),
